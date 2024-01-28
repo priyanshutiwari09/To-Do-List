@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0vh 10vw;
+    padding-top: 2vh;
+    width: 30vw;
+    -webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.3);
+}
+
+#list{
+    margin-top: 2vh;
+}
+
+.all{
+    display: grid;
+    grid-template-columns: 45% 30% 16%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 1.5vw;
+    justify-content: space-between;
+    padding: 1vh 0vw;
+    width: 28vw;
+    border-top: 1.5px solid black;
+}
+
+.inputBox{
+    display: grid;
+    grid-template-columns: 45% 30% 15%;
+    justify-content: space-between;
+    padding: 0vh 0.5vw;
+    width: 28vw;
+}
+
+.main h1{
+    font-size: 2vw;
+    margin-bottom: 4vh;
+    min-width: 100%;
+}
+
+#listName{
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.tasksDate{
+    display: flex;
+    align-items: center;
+}
+
+#deleteBtn{
+    background-color:#fe0000;
+    cursor: pointer;
+    height: 4vh;
+    width: 90%;
+    border: none;
+    border-radius: 4px;
+    color: #fefaf4;
+    font-size: 80%;
+    text-align: center;
+}
+
+#deleteBtn:hover{
+    background-color: #851414;
+}
+
+#addBtn{
+    cursor: pointer;
+    background-color: #13dfd1;
+    height: 3vh;
+    border: none;
+    border-radius: 4px;
+    color: #fefaf4;
+    font-size: 80%;
+}
+
+#addBtn:hover{
+    background-color: #4e7573;
+}
+
+.nameInput:focus{
+    outline: none;
+    border: 1px solid rgb(0, 157, 255);
+}
+
+@media (max-width: 600px) and (min-width: 481px){
+    .page{
+        min-width: 80vw;
+    }
+
+    .all{
+        min-width: 78vw;
+    }
+
+    .inputBox{
+        min-width: 78vw;
+    }
+
+    .main h1{
+        font-size: 6vw;
+        margin-bottom: 4vh;
+        min-width: 100%;
+    }
+
+    #deleteBtn{
+        font-size: 70%;
+    }
+}
+
+@media (max-width: 480px){
+    .page{
+        min-width: 85vw;
+    }
+
+    .all{
+        min-width: 83vw;
+        display: grid;
+        grid-template-columns: 45% 25% 20%;
+    }
+
+    .inputBox{
+        min-width: 83vw;
+    }
+
+    .main h1{
+        font-size: 8vw;
+        margin-bottom: 4vh;
+        min-width: 100%;
+    }
+
+    #deleteBtn{
+        font-size: 70%;
+        padding: 0.5vh 0.5vw;
+        width: 100%;
+    }
+}
+
+@media (min-width: 850px) and (max-width:1399px){
+    .page{
+        min-width: 50vw;
+    }
+
+    .all{
+        min-width: 48vw;
+    }
+
+    .inputBox{
+        min-width: 48vw;
+    }
+
+    .main h1{
+        font-size: 6vw;
+        margin-bottom: 4vh;
+        min-width: 100%;
+    }
+}
+
+@media (min-width: 601px) and (max-width:849px){
+    .page{
+        min-width: 70vw;
+    }
+
+    .all{
+        min-width: 68vw;
+    }
+
+    .inputBox{
+        min-width: 68vw;
+    }
+
+    .main h1{
+        font-size: 6vw;
+        margin-bottom: 4vh;
+        min-width: 100%;
+    }
+}
